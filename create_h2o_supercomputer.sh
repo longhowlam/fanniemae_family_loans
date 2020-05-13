@@ -3,8 +3,9 @@
 
 export INSTANCE_NAME="h2o-super-computer"
 
+
 gcloud compute instances create $INSTANCE_NAME --tags http-server  \
---machine-type=n1-standard-16 --boot-disk-size=100GB \
+--machine-type=n1-standard-16 --boot-disk-size=200GB \
 --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud  \
 --scopes=https://www.googleapis.com/auth/cloud-platform \
 --preemptible \
@@ -25,3 +26,5 @@ gcloud compute firewall-rules create h2oport --allow tcp:54321 \
 
 ### login if needed with a proper key
 ssh -i ~/.ssh/google_cloud longhowlam@$(gcloud compute instances describe $INSTANCE_NAME  --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
+
+gcloud compute instances delete  $INSTANCE_NAME 

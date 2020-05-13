@@ -11,7 +11,9 @@ bash ~/anaconda.sh -b -f -p  $HOME/anaconda
 sudo apt-get update
 sudo apt-get install -y default-jdk
 
-eval "$($HOME/anaconda/bin/conda shell.bash hook)"
+#eval "$($HOME/anaconda/bin/conda shell.bash hook)"
+export PATH=~/anaconda/bin:$PATH
+conda init
 
 ###### install h2o
 pip install requests
