@@ -1,9 +1,6 @@
-
-
-# Fanni Mae family loans
-
 ![](h2o_fannie.png)
 
+# Fanni Mae family loans
 
 The analysis and modeling of fannie mae family loans with h2o python.
 
