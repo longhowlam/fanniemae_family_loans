@@ -4,3 +4,4 @@ Loss_102.R
 data/Per*
 data/mortgages.pck
 data/test/*
+.vscode/settings.json

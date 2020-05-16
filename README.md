@@ -2,7 +2,7 @@
 
 # Fanni Mae family loans
 
-Needed some more records than the famous 'German credit' data set, try the Single Family mortgages. This repo contains the analysis and modeling of Fannie Mae Single family loans with [h2o python](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/intro.html).
+Needed some more  (a lot more than 1000) than the famous 'German credit' data set, try the Single Family mortgages. This repo contains the analysis and modeling of Fannie Mae Single family loans with [h2o python](https://docs.h2o.ai/h2o/latest-stable/h2o-py/docs/intro.html).
 
 See for further details:
 https://www.fanniemae.com/portal/funding-the-market/data/loan-performance-data.html
