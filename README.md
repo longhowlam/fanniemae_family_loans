@@ -14,4 +14,4 @@ This repo contains the analysis and modeling of Fannie Mae Single family loans w
 
 See for further details, the [Fannie Mae website](https://www.fanniemae.com/portal/funding-the-market/data/loan-performance-data.html) and a [small slide deck](https://www.fanniemae.com/resources/file/fundmarket/pdf/webinar-101.pdf) on the data.
 
-The main notebook is h2o_modeling.ipynb if you do not use all the data, only a few years then this analysis can be done on a descent laptop, otherwise a larger machine is needed. You can spin up a 'h2o_super_machine' on GCP if needed :-)
+The main notebook is `h2o_modeling.ipynb` if you do not use all the data, only a few years then this analysis can be done on a descent laptop, otherwise a larger machine is needed. You can spin up a **h2o super machine** on [Google Cloud Platform](https://cloud.google.com/) if needed :-)

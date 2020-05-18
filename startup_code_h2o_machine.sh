@@ -1,3 +1,5 @@
+#### Clone the git repo where I put the Fannie Mae h2o analysis notebook
+
 git clone https://github.com/longhowlam/fanniemae_family_loans.git
 mkdir fanniemae_family_loans/data
 gsutil cp gs://lhlbucket/data/acquisition2010.zip fanniemae_family_loans/data/acquisition2010.zip 
