@@ -4,7 +4,7 @@
 
 The [German Credit Data set](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) is a famous open credit risk data set. If you need a little bit more challenge then try the Single Family mortgages. 
 
-* The is data set is much bigger than the 1000 records in the German Credit Data. Only for the years 2010/11/12 there are 6.1 mln. mortgages, and there are 20 years in total that you can download.
+* The is data set is much bigger than the 1000 records in the German Credit Data. In fact the mortgage data is provided in zip files per quarter and there are 20 years of mortgages! Only for the years 2010/11/12 there are already 6.1 mln. mortgages.
 
 * In contrary to the German credit data set, there is no target defined. There are performance data sets for the mortgages where you can / need to create your own target.
 
@@ -14,4 +14,4 @@ This repo contains the analysis and modeling of Fannie Mae Single family loans w
 
 See for further details, the [Fannie Mae website](https://www.fanniemae.com/portal/funding-the-market/data/loan-performance-data.html) and a [small slide deck](https://www.fanniemae.com/resources/file/fundmarket/pdf/webinar-101.pdf) on the data.
 
-The main notebook is `h2o_modeling.ipynb` if you do not use all the data, only a few years then this analysis can be done on a descent laptop, otherwise a larger machine is needed. You can spin up a **h2o super machine** on [Google Cloud Platform](https://cloud.google.com/) if needed :-)
+The main notebook is `h2o_modeling.ipynb` if you do not use all the data, only a few years then this analysis can be done on a descent laptop, otherwise a larger machine is needed. You can spin up a **h2o super machine** on [Google Cloud Platform](https://cloud.google.com/) if needed :-) Example (Google cloud) commands are given in the `create_h2o_supercomputer.sh` file.
