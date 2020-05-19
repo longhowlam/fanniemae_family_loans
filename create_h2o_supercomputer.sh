@@ -1,9 +1,9 @@
 
 ## If you need more power you can spin up a VM on GCP with this startup script 
-## during the start of the VM you execute some commands.
+## during the start of the VM GCP allows you to execute some commands.
 
-## Here you see that during the startup I copy a script 'startup_code_h2o_machine.sh'
-## that I placed on a gcs bucket. This script will install anaconda and h2o 
+## In this example I copy a script 'startup_code_h2o_machine.sh' that I have already put on a gcs bucket.
+## This script will install anaconda and h2o 
 
 export INSTANCE_NAME="h2o-super-computer"
 
