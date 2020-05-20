@@ -4,7 +4,7 @@
 
 The [German Credit Data set](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)) is a famous open credit risk data set. If you need a little bit more challenge then try the Single Family mortgages. 
 
-* The is data set is much bigger than the 1000 records in the German Credit Data. In fact the mortgage data is provided in zip files per quarter and there are 20 years of mortgages! Only for the years 2010/11/12 there are already 6.1 mln. mortgages.
+* The Fannie Mae data is much bigger than the 1000 records in the German Credit Data. In fact the mortgage data is provided in zip files per quarter and there are 20 years of mortgages! Only for the years 2010/11/12 there are already 6.1 mln. mortgages.
 
 * In contrary to the German credit data set, there is no target defined. There are performance data sets for the mortgages where you can / need to create your own target.
 

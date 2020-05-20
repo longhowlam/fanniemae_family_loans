@@ -4,6 +4,7 @@
 
 ## In this example I copy a script 'startup_code_h2o_machine.sh' that I have already put on a gcs bucket.
 ## This script will install anaconda and h2o 
+gcloud compute instances list
 
 export INSTANCE_NAME="h2o-super-computer"
 
@@ -28,6 +29,10 @@ gcloud compute firewall-rules create h2oport --allow tcp:54321 \
 
 ### ssh into the machine (ssh keys need to be set up on your GCP)
 ssh -i ~/.ssh/google_cloud longhowlam@$(gcloud compute instances describe $INSTANCE_NAME  --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
+
+### forwarding port h2o
+gcloud compute ssh $INSTANCE_NAME \
+    -- -L 54321:localhost:54321
 
 ### delete the machine to stop incuring costs 
 ### preemptible machines on GCP stop after 24 hours anyway (or earlier.....)
