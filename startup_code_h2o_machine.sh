@@ -2,8 +2,8 @@
 
 git clone https://github.com/longhowlam/fanniemae_family_loans.git
 mkdir fanniemae_family_loans/data
-gsutil cp gs://lhlbucket/data/acquisition2010.zip fanniemae_family_loans/data/acquisition2010.zip 
-gsutil cp gs://lhlbucket/data/performance2010.zip fanniemae_family_loans/data/performance2010.zip 
+gsutil cp gs://lhlbucket/data/acquisition2010_2018.zip fanniemae_family_loans/data/acquisition2010_2018.zip 
+gsutil cp gs://lhlbucket/data/performance2010_2018.zip fanniemae_family_loans/data/performance2010_2018.zip 
 
 ##### get and install anaconda 
 wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh  -O ~/anaconda.sh 
@@ -28,4 +28,4 @@ pip install -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html h2o
 pip install plotly_express
 
 ### copy multiple fannie mae zip files from GCS to the VM
-gsutil cp gs://lhlbucket/fanniemae/20* .
+#gsutil cp gs://lhlbucket/fanniemae/20* .
