@@ -27,5 +27,8 @@ pip install -f http://h2o-release.s3.amazonaws.com/h2o/latest_stable_Py.html h2o
 
 pip install plotly_express
 
+sudo apt-get install unzip
+sudo apt-get install zip
+
 ### copy multiple fannie mae zip files from GCS to the VM
 #gsutil cp gs://lhlbucket/fanniemae/20* .
