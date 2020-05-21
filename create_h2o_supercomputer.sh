@@ -8,8 +8,10 @@ gcloud compute instances list
 
 export INSTANCE_NAME="h2o-super-computer"
 
+### creating one with pd-ssd disk type which is more expensive, but faster....  
+
 gcloud compute instances create $INSTANCE_NAME --tags http-server  \
---machine-type=n1-standard-16 --boot-disk-size=200GB \
+--machine-type=n1-standard-16 --boot-disk-size=200GB  --boot-disk-type=pd-ssd \
 --image-family ubuntu-1804-lts --image-project ubuntu-os-cloud  \
 --scopes=https://www.googleapis.com/auth/cloud-platform \
 --preemptible \
@@ -31,8 +33,7 @@ gcloud compute firewall-rules create h2oport --allow tcp:54321 \
 ssh -i ~/.ssh/google_cloud longhowlam@$(gcloud compute instances describe $INSTANCE_NAME  --format='get(networkInterfaces[0].accessConfigs[0].natIP)')
 
 ### forwarding port h2o
-gcloud compute ssh $INSTANCE_NAME \
-    -- -L 54321:localhost:54321
+gcloud compute ssh $INSTANCE_NAME -- -L 54321:localhost:54321
 
 ### delete the machine to stop incuring costs 
 ### preemptible machines on GCP stop after 24 hours anyway (or earlier.....)
